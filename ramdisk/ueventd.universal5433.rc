@@ -89,7 +89,7 @@
 /dev/media2               0660   media      media
 
 # fingerprint sensor
-/dev/vfsspi        0660   system     system
+/dev/vfsspi               0660   system     system
 
 # hevc
 /dev/video10              0660   media      media
