@@ -261,6 +261,7 @@ service sensorhubservice /system/bin/sensorhubservice
 # for Bluetooth Tethering
 service dhcpcd_bt-pan /system/bin/dhcpcd -ABKL
     class main
+<<<<<<< HEAD
     disabled
     oneshot
 
@@ -269,3 +270,8 @@ service iprenew_bt-pan /system/bin/dhcpcd -n
     disabled
     oneshot
 # end of BT
+=======
+    user drmrpc
+    group drmrpc
+    oneshot
+>>>>>>> 294eef8... gts2: Don't respawn mobicore if it fails
