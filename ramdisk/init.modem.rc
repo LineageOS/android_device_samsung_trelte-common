@@ -2,6 +2,7 @@
 service modemloader /system/bin/modemloader
     class core
     oneshot
+    seclabel u:r:macloader:s0
 
 service cpboot-daemon /sbin/cbd -d -tstem7400 -bh -mh -p 13
     class main
