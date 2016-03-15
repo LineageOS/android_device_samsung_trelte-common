@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "bfb3d3c7_8e1bff71",
+        "filename": "sepolicy/modemloader.te",
+        "patchSetId": 1
+      },
+      "lineNbr": 10,
+      "author": {
+        "id": 2936
+      },
+      "writtenOn": "2016-03-15T21:59:59Z",
+      "side": 1,
+      "message": "set_prop(modemloader, system_prop)\n\nAlso, don\u0027t suppose you can label the modemloader property?",
+      "revId": "f75aa68481380ac148ce5e69d556914c2c90e9f4",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
