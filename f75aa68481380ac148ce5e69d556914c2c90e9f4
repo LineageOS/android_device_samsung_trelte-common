@@ -16,6 +16,24 @@
       "revId": "f75aa68481380ac148ce5e69d556914c2c90e9f4",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "9fb8cfa7_67503234",
+        "filename": "sepolicy/modemloader.te",
+        "patchSetId": 1
+      },
+      "lineNbr": 10,
+      "author": {
+        "id": 7155
+      },
+      "writtenOn": "2016-03-16T17:34:56Z",
+      "side": 1,
+      "message": "Can you show me an example?\nI got like zero knowledge regarding SELinux.",
+      "parentUuid": "bfb3d3c7_8e1bff71",
+      "revId": "f75aa68481380ac148ce5e69d556914c2c90e9f4",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
     }
   ]
 }
