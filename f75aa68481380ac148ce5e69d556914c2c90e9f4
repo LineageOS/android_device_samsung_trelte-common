@@ -34,6 +34,24 @@
       "revId": "f75aa68481380ac148ce5e69d556914c2c90e9f4",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "7faddb67_06213aa0",
+        "filename": "sepolicy/modemloader.te",
+        "patchSetId": 1
+      },
+      "lineNbr": 10,
+      "author": {
+        "id": 2936
+      },
+      "writtenOn": "2016-03-16T20:20:25Z",
+      "side": 1,
+      "message": "You can create custom property labels like this:\nhttps://github.com/CyanogenMod/android_device_motorola_msm8960dt-common/blob/cm-13.0/sepolicy/property.te\n\nThat lets you label properties like this: https://github.com/CyanogenMod/android_device_motorola_msm8960dt-common/blob/cm-13.0/sepolicy/property_contexts\n\nYou can grant a domain access to a specific property label like using set_prop, which is a macro defined here: \nhttps://github.com/CyanogenMod/android_external_sepolicy/blob/cm-13.0/te_macros#L137",
+      "parentUuid": "9fb8cfa7_67503234",
+      "revId": "f75aa68481380ac148ce5e69d556914c2c90e9f4",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
     }
   ]
 }
