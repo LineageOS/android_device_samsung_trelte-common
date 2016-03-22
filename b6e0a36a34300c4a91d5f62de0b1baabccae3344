@@ -46,6 +46,30 @@
       "revId": "b6e0a36a34300c4a91d5f62de0b1baabccae3344",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "7faddb67_173e3829",
+        "filename": "ramdisk/init.modem.rc",
+        "patchSetId": 4
+      },
+      "lineNbr": 5,
+      "author": {
+        "id": 2936
+      },
+      "writtenOn": "2016-03-22T17:19:56Z",
+      "side": 1,
+      "message": ":P\n\nIf it\u0027s a binary labeled in file_contexts you shouldn\u0027t need to seclabel it. If you have something like a service that runs an unlabeled script, when defining a service you can label the service to run with a given context.",
+      "parentUuid": "7faddb67_97dc6819",
+      "range": {
+        "startLine": 5,
+        "startChar": 4,
+        "endLine": 5,
+        "endChar": 29
+      },
+      "revId": "b6e0a36a34300c4a91d5f62de0b1baabccae3344",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
     }
   ]
 }
