@@ -22,6 +22,30 @@
       "revId": "b6e0a36a34300c4a91d5f62de0b1baabccae3344",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "7faddb67_97dc6819",
+        "filename": "ramdisk/init.modem.rc",
+        "patchSetId": 4
+      },
+      "lineNbr": 5,
+      "author": {
+        "id": 7155
+      },
+      "writtenOn": "2016-03-22T16:55:40Z",
+      "side": 1,
+      "message": "Why is it that some executables are labeled in the contexts file and some are labeled \u0027on the fly\u0027 in the ramdisk?\nQualcomm seems to be doing the same thing..\nAnd yeah, macloader was a typo obviously.",
+      "parentUuid": "7faddb67_f7c59c5c",
+      "range": {
+        "startLine": 5,
+        "startChar": 4,
+        "endLine": 5,
+        "endChar": 29
+      },
+      "revId": "b6e0a36a34300c4a91d5f62de0b1baabccae3344",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
     }
   ]
 }
