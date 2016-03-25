@@ -20,6 +20,7 @@ import static com.android.internal.telephony.RILConstants.*;
 
 import android.content.Context;
 import android.telephony.Rlog;
+import android.os.AsyncResult;
 import android.os.Message;
 import android.os.Parcel;
 import android.telephony.PhoneNumberUtils;
@@ -51,7 +52,7 @@ public class SlteRIL extends RIL {
     private static final int RIL_REQUEST_DIAL_EMERGENCY_CALL = 10016;
 
     public SlteRIL(Context context, int preferredNetworkType, int cdmaSubscription) {
-        super(context, preferredNetworkType, cdmaSubscription, null);
+        this(context, preferredNetworkType, cdmaSubscription, null);
     }
 
     public SlteRIL(Context context, int preferredNetworkType,
@@ -258,7 +259,7 @@ public class SlteRIL extends RIL {
     @Override
     protected Object
     responseSignalStrength(Parcel p) {
-        int gsmSignalStrength = p.readInt() & 0xff;
+        int gsmSignalStrength = p.readInt();
         int gsmBitErrorRate = p.readInt();
         int cdmaDbm = p.readInt();
         int cdmaEcio = p.readInt();
@@ -273,16 +274,6 @@ public class SlteRIL extends RIL {
         int tdScdmaRscp = p.readInt();
         // constructor sets default true, makeSignalStrengthFromRilParcel does not set it
         boolean isGsm = true;
-
-        if ((lteSignalStrength & 0xff) == 255 || lteSignalStrength == 99) {
-            lteSignalStrength = 99;
-            lteRsrp = SignalStrength.INVALID;
-            lteRsrq = SignalStrength.INVALID;
-            lteRssnr = SignalStrength.INVALID;
-            lteCqi = SignalStrength.INVALID;
-        } else {
-            lteSignalStrength &= 0xff;
-        }
 
         if (RILJ_LOGD)
             riljLog("gsmSignalStrength:" + gsmSignalStrength + " gsmBitErrorRate:" + gsmBitErrorRate +
@@ -394,6 +385,16 @@ public class SlteRIL extends RIL {
                 // Add debug to check if this wants to execute any useful am command
                 Rlog.v(RILJ_LOG_TAG, "XMM7260: am=" + strAm);
                 break;
+        }
+    }
+
+    @Override
+    public void getRadioCapability(Message response) {
+        riljLog("getRadioCapability: returning static radio capability");
+        if (response != null) {
+            Object ret = makeStaticRadioCapability();
+            AsyncResult.forMessage(response, ret, null);
+            response.sendToTarget();
         }
     }
 }
