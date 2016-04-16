@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "5faad753_d9ad43eb",
+        "filename": "ramdisk/fstab.universal5433",
+        "patchSetId": 3
+      },
+      "lineNbr": 16,
+      "author": {
+        "id": 14723
+      },
+      "writtenOn": "2016-04-16T13:50:27Z",
+      "side": 1,
+      "message": "/devices/15560000.dwmmc2/mmc_host/mmc1*                       auto    auto    defaults    voldmanaged\u003dsdcard1:auto,encryptable\u003duserdata\n\nThis will fix the Micro SDcard not being viewable with file manager(s)",
+      "revId": "f81478ac6c03cb2815e1341b8ca252ee2fc37ffc",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
