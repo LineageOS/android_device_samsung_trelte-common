@@ -340,7 +340,7 @@ public class SlteRIL extends RIL {
     @Override
     protected void
     processUnsolicited(Parcel p) {
-        Object ret;
+        Object ret = null;
 
         int dataPosition = p.dataPosition();
         int origResponse = p.readInt();
@@ -348,6 +348,13 @@ public class SlteRIL extends RIL {
 
         /* Remap incorrect respones or ignore them */
         switch (origResponse) {
+            case 11002: // RIL_UNSOL_STK_SEND_SMS_RESULT
+                ret = responseInts(p);
+                break;
+            case 11003: // RIL_UNSOL_STK_CALL_CONTROL_RESULT
+                // FIXME
+                //ret = responseVoid(p);
+                break;
             case RIL_UNSOL_DEVICE_READY_NOTI: /* Registrant notification */
             case RIL_UNSOL_SIM_PB_READY: /* Registrant notification */
                 Rlog.v(RILJ_LOG_TAG,
@@ -364,6 +371,14 @@ public class SlteRIL extends RIL {
         }
 
         switch (newResponse) {
+            case RIL_UNSOL_STK_SEND_SMS_RESULT:
+                if (RILJ_LOGD) unsljLogRet(response, ret);
+
+                if (mCatSendSmsResultRegistrant != null) {
+                    mCatSendSmsResultRegistrant.notifyRegistrant(
+                            new AsyncResult (null, ret, null));
+                }
+            break;
             case RIL_UNSOL_AM:
                 ret = responseString(p);
                 break;
