@@ -348,6 +348,12 @@ public class SlteRIL extends RIL {
 
         /* Remap incorrect respones or ignore them */
         switch (origResponse) {
+            case 11002: // RIL_UNSOL_STK_SEND_SMS_RESULT
+                ret = responseInts(p);
+                return;
+            case 11003: // RIL_UNSOL_STK_CALL_CONTROL_RESULT
+                ret = responseVoid(p);
+                return;
             case RIL_UNSOL_DEVICE_READY_NOTI: /* Registrant notification */
             case RIL_UNSOL_SIM_PB_READY: /* Registrant notification */
                 Rlog.v(RILJ_LOG_TAG,
