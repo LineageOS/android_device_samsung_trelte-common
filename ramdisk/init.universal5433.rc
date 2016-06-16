@@ -693,6 +693,10 @@ service ipsec-daemon /system/bin/IPSecService
     user system
     group system net_raw inet net_admin
 
+service battery_charger /sbin/healthd -c
+    class charger
+    critical
+
 # LPM
 on property:ro.bootmode=charger
     mount ext4 /dev/block/mmcblk0p18 /system wait ro
@@ -706,6 +710,19 @@ service lhd /system/bin/lhd /system/etc/lhd.conf
     user gps
     group system inet net_raw
     ioprio be 0
+
+on charger
+    # Set cpu governor to powersave while in charging mode
+    write /sys/devices/system/cpu/cpu0/cpufreq/scaling_governor powersave
+    write /sys/devices/system/cpu/cpu1/cpufreq/scaling_governor powersave
+    write /sys/devices/system/cpu/cpu2/cpufreq/scaling_governor powersave
+    write /sys/devices/system/cpu/cpu3/cpufreq/scaling_governor powersave
+
+    # EHCI runtime enable for LPA
+    write /sys/devices/platform/s5p-ehci/power/control auto
+
+    # Do not set any USB mode while charging
+    setprop sys.usb.config charging
 
 # GPS
 service gpsd /system/bin/gpsd -c /system/etc/gps.xml
