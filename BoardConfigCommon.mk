@@ -23,8 +23,6 @@ TARGET_BOOTLOADER_BOARD_NAME := universal5433
 BOARD_KERNEL_BASE := 0x10000000
 BOARD_KERNEL_PAGESIZE := 2048
 #BOARD_KERNEL_CMDLINE := The bootloader ignores the cmdline from the boot.img
-BOARD_KERNEL_PREBUILT_DT := true
-BOARD_KERNEL_SEPARATED_DT := true
 
 # /proc/partitions * 2 (why?) * BLOCK_SIZE (512) = size in bytes
 BOARD_BOOTIMAGE_PARTITION_SIZE := 14680064
@@ -47,13 +45,12 @@ TARGET_KERNEL_SOURCE := kernel/samsung/trelte
 # Use these flags if the board has a ext4 partition larger than 2gb
 BOARD_HAS_LARGE_FILESYSTEM := true
 TARGET_USERIMAGES_USE_EXT4 := true
+# F2FS support
+TARGET_USERIMAGES_USE_F2FS := true
 
 # Extended filesystem support
 TARGET_KERNEL_HAVE_EXFAT := true
 TARGET_KERNEL_HAVE_NTFS := true
-
-# F2FS support
-TARGET_USERIMAGES_USE_F2FS := true
 
 # Bluetooth
 BOARD_HAVE_BLUETOOTH := true
