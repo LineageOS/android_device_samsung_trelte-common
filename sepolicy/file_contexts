@@ -1,6 +1,4 @@
-##########################
 # Devices
-#
 /dev/mali[0-9]*              u:object_r:gpu_device:s0
 
 /dev/seiren                  u:object_r:seiren_device:s0
@@ -97,7 +95,6 @@
 
 ####################################
 # deamons
-#
 /system/bin/cbd              -- u:object_r:cpboot-daemon_exec:s0
 /system/bin/gpsd             -- u:object_r:gpsd_exec:s0
 /system/bin/macloader        -- u:object_r:macloader_exec:s0
