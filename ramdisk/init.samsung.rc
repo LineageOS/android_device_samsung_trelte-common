@@ -145,7 +145,6 @@ on boot
     chmod 0664 /sys/power/cpufreq_max_limit
 
     # NFC_NXP
-    setprop ro.nfc.port "I2C"
     chmod 0660 /dev/pn547
     chown nfc nfc /dev/pn547
 
@@ -184,8 +183,7 @@ on boot
     setprop net.tcp.buffersize.edge    4093,26280,35040,4096,16384,35040
     setprop net.tcp.buffersize.gprs    4092,30000,30000,4096,8760,11680
     setprop net.tcp.buffersize.evdo    4094,87380,262144,4096,16384,262144
-    # Define default initial receive window size in segments.
-    setprop net.tcp.default_init_rwnd 60
+  
     # Assign TCP buffer thresholds to be ceiling value of technology maximums
     # Increased technology maximums should be reflected here.
     write /proc/sys/net/core/rmem_max  1048576
