@@ -10,11 +10,12 @@ type imei_efs_file, file_type;
 type prov_efs_file, file_type;
 type radio_factoryapp_efs_file, file_type;
 type sensor_efs_file, file_type;
+type sensorhub_dev, dev_type;
 type wifi_efs_file, file_type;
 
 ### sysfs types
+type sysfs_mdnie_writable, fs_type, sysfs_type, mlstrustedobject;
 type sysfs_mipi_writable, fs_type, sysfs_type, mlstrustedobject;
 type sysfs_multipdp_writable, fs_type, sysfs_type, mlstrustedobject;
 type sysfs_usb_power_writable, fs_type, sysfs_type, mlstrustedobject;
-
 allow sysfs_type tmpfs:filesystem associate;
