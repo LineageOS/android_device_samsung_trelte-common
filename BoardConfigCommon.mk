@@ -159,9 +159,6 @@ BOARD_PROVIDES_LIBRIL := true
 BOARD_MODEM_NEEDS_VIDEO_CALL_FIELD := true
 TARGET_IGNORE_RO_BOOT_REVISION := true
 
-# RIL.java overwrite
-BOARD_RIL_CLASS := ../../../$(LOCAL_PATH)/ril
-
 # Recovery
 TARGET_RECOVERY_FSTAB := $(LOCAL_PATH)/ramdisk/fstab.universal5433
 
