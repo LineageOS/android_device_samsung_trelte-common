@@ -88,9 +88,6 @@
 /dev/video149             0660   media      media
 /dev/media2               0660   media      media
 
-# fingerprint sensor
-/dev/vfsspi        0660   system     system
-
 # hevc
 /dev/video10              0660   media      media
 /dev/video11              0660   media      media
@@ -106,8 +103,12 @@
 /sys/devices/virtual/input/input*	poll_delay	0660	system	radio
 /sys/devices/virtual/input/input*	enable		0660	system	radio
 
+# sensor
+/dev/iio:device*      0760  system   radio
+
 # sensorhub
 /dev/ssp_sensorhub		  0660	 system     system
+/dev/ssp_data_injection   0660   system     system
 
 # Sensorhub IIO
 /dev/ssp_sensorhub        0660   system		system
@@ -118,7 +119,7 @@
 
 # fingerprint sensor
 /dev/vfsspi        0660   system     system
-
+/dev/esfp0        0660   system     system
 /dev/block/mmcblk0p13     0660   system     radio
 /dev/block/mmcblk0p14     0660   system     radio
 /dev/umts*                0660   system     radio
@@ -134,4 +135,11 @@
 /dev/bbd_sio              0660   system     system
 /dev/bbd_patch            0660   system     system
 /dev/ttyBCM*              0660   system     system
+
+# MobiCore
+/dev/mobicore             0700   system     system
+/dev/mobicore-user        0666   radio     system
+
+# Secure MEM driver
+/dev/s5p-smem             0660   system     system
 
