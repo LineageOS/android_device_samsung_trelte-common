@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "3fa7e38b_040a8b25",
+        "filename": "overlay/packages/apps/Settings/res/values/config.xml",
+        "patchSetId": 2
+      },
+      "lineNbr": 2,
+      "author": {
+        "id": 13028
+      },
+      "writtenOn": "2016-07-02T09:36:31Z",
+      "side": 1,
+      "message": "Some remains of a failed merge I\u0027d say",
+      "revId": "1c2f19bb4c814eb22995127948f1b1e0c212cce0",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
