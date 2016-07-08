@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "3fa7e38b_c09451eb",
+        "filename": "validityservice/src/com/validity/fingerprint/ValidityService.java",
+        "patchSetId": 8
+      },
+      "lineNbr": 75,
+      "author": {
+        "id": 16
+      },
+      "writtenOn": "2016-07-08T18:56:14Z",
+      "side": 1,
+      "message": "Are we really supposed to doing this?",
+      "range": {
+        "startLine": 72,
+        "startChar": 4,
+        "endLine": 75,
+        "endChar": 95
+      },
+      "revId": "8a7873ef1ff7311606b9ee3df3e73de954de5624",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
