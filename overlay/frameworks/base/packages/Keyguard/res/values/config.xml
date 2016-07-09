@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+or<?xml version="1.0" encoding="utf-8"?>
 <!--
 /*
 ** Copyright 2009, The Android Open Source Project
@@ -27,5 +27,8 @@
 
     <!-- Threshold in micro amperes from which a charger is rated as "fast" -->
     <integer name="config_chargingFastThreshold">750</integer>
+
+    <!-- Should we listen for fingerprints while the screen is off? -->
+    <bool name="config_fingerprintWakeAndUnlock">false</bool>
 
 </resources>
