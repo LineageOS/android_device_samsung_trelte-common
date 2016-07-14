@@ -1,0 +1,135 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "3fa7e38b_f12a76e5",
+        "filename": "sepolicy/file_contexts",
+        "patchSetId": 8
+      },
+      "lineNbr": 92,
+      "author": {
+        "id": 2936
+      },
+      "writtenOn": "2016-07-14T01:16:37Z",
+      "side": 1,
+      "message": "m comes before r, although I don\u0027t think this file is actually organized.",
+      "revId": "651aa80956b50e30f50854d3d628de65b9064d20",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "3fa7e38b_f11356b7",
+        "filename": "sepolicy/file_contexts",
+        "patchSetId": 8
+      },
+      "lineNbr": 106,
+      "author": {
+        "id": 2936
+      },
+      "writtenOn": "2016-07-14T01:16:37Z",
+      "side": 1,
+      "message": "Same as above, except gps kind of throws off the alphabetical order already.",
+      "revId": "651aa80956b50e30f50854d3d628de65b9064d20",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "3fa7e38b_d112dab1",
+        "filename": "sepolicy/init.te",
+        "patchSetId": 8
+      },
+      "lineNbr": 2,
+      "author": {
+        "id": 2936
+      },
+      "writtenOn": "2016-07-14T01:16:37Z",
+      "side": 1,
+      "message": "I\u0027d be surprised if this wasn\u0027t already covered, since the actual mount is done in the base init.rc.",
+      "revId": "651aa80956b50e30f50854d3d628de65b9064d20",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "3fa7e38b_71276614",
+        "filename": "sepolicy/init.te",
+        "patchSetId": 8
+      },
+      "lineNbr": 14,
+      "author": {
+        "id": 2936
+      },
+      "writtenOn": "2016-07-14T01:16:37Z",
+      "side": 1,
+      "message": "Shouldn\u0027t this be a little bit more restrictive? Ideally you\u0027d label the sysfs entries.",
+      "revId": "651aa80956b50e30f50854d3d628de65b9064d20",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "3fa7e38b_9124620f",
+        "filename": "sepolicy/property.te",
+        "patchSetId": 8
+      },
+      "lineNbr": 4,
+      "author": {
+        "id": 2936
+      },
+      "writtenOn": "2016-07-14T01:16:37Z",
+      "side": 1,
+      "message": "C comes before M",
+      "revId": "651aa80956b50e30f50854d3d628de65b9064d20",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "3fa7e38b_511eeaba",
+        "filename": "sepolicy/system_server.te",
+        "patchSetId": 8
+      },
+      "lineNbr": 15,
+      "author": {
+        "id": 2936
+      },
+      "writtenOn": "2016-07-14T01:16:37Z",
+      "side": 1,
+      "message": "Do try to alphabetize these.",
+      "range": {
+        "startLine": 15,
+        "startChar": 34,
+        "endLine": 15,
+        "endChar": 37
+      },
+      "revId": "651aa80956b50e30f50854d3d628de65b9064d20",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "3fa7e38b_3121eefc",
+        "filename": "sepolicy/system_server.te",
+        "patchSetId": 8
+      },
+      "lineNbr": 26,
+      "author": {
+        "id": 2936
+      },
+      "writtenOn": "2016-07-14T01:16:37Z",
+      "side": 1,
+      "message": "Do try to alphabetize these.",
+      "range": {
+        "startLine": 26,
+        "startChar": 41,
+        "endLine": 26,
+        "endChar": 49
+      },
+      "revId": "651aa80956b50e30f50854d3d628de65b9064d20",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
