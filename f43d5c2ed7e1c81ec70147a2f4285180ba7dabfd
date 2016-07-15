@@ -33,6 +33,23 @@
       "revId": "f43d5c2ed7e1c81ec70147a2f4285180ba7dabfd",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "3fa7e38b_0231020c",
+        "filename": "sepolicy/init.te",
+        "patchSetId": 14
+      },
+      "lineNbr": 15,
+      "author": {
+        "id": 7155
+      },
+      "writtenOn": "2016-07-15T08:49:33Z",
+      "side": 1,
+      "message": "Remove the newline.",
+      "revId": "f43d5c2ed7e1c81ec70147a2f4285180ba7dabfd",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
     }
   ]
 }
