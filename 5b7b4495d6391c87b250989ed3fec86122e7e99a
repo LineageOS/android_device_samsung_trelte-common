@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "3fa7e38b_21374bb3",
+        "filename": "overlay/frameworks/base/core/res/res/values/config.xml",
+        "patchSetId": 5
+      },
+      "lineNbr": 277,
+      "author": {
+        "id": 7155
+      },
+      "writtenOn": "2016-07-21T12:28:24Z",
+      "side": 1,
+      "message": "Remove this newline.",
+      "revId": "5b7b4495d6391c87b250989ed3fec86122e7e99a",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
