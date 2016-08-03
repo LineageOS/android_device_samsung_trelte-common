@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "3fa7e38b_f2e1e6fd",
+        "filename": "ramdisk/init.samsung.rc",
+        "patchSetId": 2
+      },
+      "lineNbr": 251,
+      "author": {
+        "id": 7880
+      },
+      "writtenOn": "2016-08-03T08:20:06Z",
+      "side": 0,
+      "message": "removing this actually makes it possible for it to restart",
+      "revId": "dc8b3c917799872a4f44ad24a3bc5324aed58c50",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
