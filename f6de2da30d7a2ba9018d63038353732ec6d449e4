@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "3fa7e38b_32b9bee8",
+        "filename": "/COMMIT_MSG",
+        "patchSetId": 3
+      },
+      "lineNbr": 7,
+      "author": {
+        "id": 7880
+      },
+      "writtenOn": "2016-08-03T08:28:44Z",
+      "side": 1,
+      "message": "i was referring to this part of ur commit message \u0027dont respawn mobicore if it fails\u0027",
+      "revId": "f6de2da30d7a2ba9018d63038353732ec6d449e4",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
