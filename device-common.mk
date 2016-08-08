@@ -154,11 +154,6 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/idc/ft5x06_ts.idc:/system/usr/idc/ft5x06_ts.idc \
     $(LOCAL_PATH)/configs/idc/sec_e-pen.idc:/system/usr/idc/sec_e-pen.idc
 
-
-# Charger
-PRODUCT_PACKAGES += \
-    charger_res_images
-
 # Packages
 PRODUCT_PACKAGES += \
     SamsungServiceMode
