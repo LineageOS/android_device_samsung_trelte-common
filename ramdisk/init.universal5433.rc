@@ -647,7 +647,6 @@ on property:ro.SecEDS.enable=false
 # Set watchdog timer to 30 seconds and pet it every 10 seconds to get a 20 second margin
 service watchdogd /sbin/watchdogd 10 20
     class core
-    seclabel u:r:watchdogd:s0
     disabled
 
 # Kick watchdogd if debug_level is low
@@ -658,7 +657,6 @@ service prepare_param /system/bin/prepare_param.sh /dev/block/platform/15540000.
     class core
     user root
     group root
-    seclabel u:r:prepare_param:s0
     oneshot
 
 # on userdebug and eng builds, enable kgdb on the serial console
@@ -773,7 +771,6 @@ service swapon /sbin/sswap -s -f 1536
     class core
     user root
     group root
-    seclabel u:r:sswap:s0
     oneshot
 
 # Reactivation lock
