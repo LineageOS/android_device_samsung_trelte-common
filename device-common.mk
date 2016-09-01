@@ -59,8 +59,8 @@ PRODUCT_PACKAGES += \
     libstlport
 
 # Hardware/Samsung/AdvancedDisplay (MDNIE)
-PRODUCT_PACKAGES += \
-    AdvancedDisplay
+#PRODUCT_PACKAGES += \
+#    AdvancedDisplay
 
 # Radio
 PRODUCT_PACKAGES += \
