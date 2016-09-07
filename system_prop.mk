@@ -60,6 +60,24 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.nfc.sec_hal=true \
     ro.nfc.port="I2C"
 
+# RIL
+rild.libargs=-d /dev/ttyS0
+rild.libpath=/system/lib/libsec-ril.so
+ro.ril.hsxpa=1
+ro.ril.gprsclass=10
+ro.ril.telephony.mqanelements=5
+ro.telephony.default_network=9
+ro.telephony.ril_class=SlteRIL
+persist.radio.apm_sim_not_pwdn=1
+persist.radio.add_power_save=1
+persist.radio.sib16_support=0
+persist.radio.tdscdma_present=1
+# qos will temporary false while supporting qos in EVO-RIL.
+persist.data.netmgrd.qos.enable=false
+ro.data.large_tcp_window_size=true
+# netmgrd should be false in EVO-RIL model
+ro.use_data_netmgrd=false
+
 # Wifi
 PRODUCT_PROPERTY_OVERRIDES += \
     wifi.interface=wlan0
