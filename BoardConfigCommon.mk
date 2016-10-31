@@ -1,5 +1,6 @@
 LOCAL_PATH := device/samsung/trelte-common
-
+# Boot animation
+TARGET_BOOTANIMATION_MULTITHREAD_DECODE := true
 TARGET_ARCH := arm
 TARGET_NO_BOOTLOADER := true
 TARGET_NO_RADIOIMAGE := true
@@ -49,9 +50,6 @@ TARGET_USERIMAGES_USE_EXT4 := true
 # Extended filesystem support
 TARGET_KERNEL_HAVE_EXFAT := true
 TARGET_KERNEL_HAVE_NTFS := true
-
-# F2FS support
-TARGET_USERIMAGES_USE_F2FS := true
 
 # Bluetooth
 BOARD_HAVE_BLUETOOTH := true
